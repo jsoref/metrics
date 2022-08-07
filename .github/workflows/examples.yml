@@ -354,7 +354,7 @@ jobs:
           user: lowlighter
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
-      - name: 💡 Coding habits and activity - Midly interesting facts
+      - name: 💡 Coding habits and activity - Mildly interesting facts
         uses: lowlighter/metrics@master
         with:
           filename: metrics.plugin.habits.facts.svg
@@ -796,7 +796,7 @@ jobs:
           plugin_skyline_quality: 1
           plugin_skyline_settings: |
             {
-              "url": "https://honzaap.github.io/GithubCity?name=${login}&year=${year}",
+              "url": "https://honzaap.github.io/GitHubCity?name=${login}&year=${year}",
               "ready": "[...document.querySelectorAll('.display-info span')].map(span => span.innerText).includes('${login}')",
               "wait": 4,
               "hide": ".github-corner, .footer-link, .buttons-options, .mobile-rotate, .display-info span:first-child"
@@ -806,7 +806,7 @@ jobs:
           user: lowlighter
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
-      - name: ⏱️ Google PageSpeed - Succint report
+      - name: ⏱️ Google PageSpeed - Succinct report
         uses: lowlighter/metrics@master
         with:
           filename: metrics.plugin.pagespeed.svg
